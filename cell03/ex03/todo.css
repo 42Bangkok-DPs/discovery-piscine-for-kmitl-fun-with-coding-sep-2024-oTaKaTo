@@ -17,8 +17,9 @@
 }
 
 a:hover{
-    cursor:pointer
+    cursor:pointer;
 }
+
 a{
     text-decoration: none;
     width: 100%;
