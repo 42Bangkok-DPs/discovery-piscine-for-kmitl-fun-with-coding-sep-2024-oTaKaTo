@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex01</title>
+    <link rel="stylesheet" href="balloon.css" />
+  </head>
+  <body>
+    <div
+      class="balloon"
+      id="balloon"
+      onclick="inflate()"
+      onmouseleave="deflate()"
+    ></div>
+    <script>
+      let indexColor = 0;
+      const balloon = document.getElementById("balloon");
+      const color = ["red", "green", "blue"];
+
+      function changeColor(direction) {
+        if (direction === "forward") {
+          indexColor = (indexColor + 1) % 3;
+        } else {
+          indexColor = ((indexColor - 1) % 3 + 3) % 3;
+        }
+        balloon.style.backgroundColor = color[indexColor];
+      }
+
+      function inflate() {
+        const balloon_size = balloon.offsetWidth;
+        balloon.style.width = balloon_size + 10 + "px";
+        balloon.style.height = balloon_size + 10 + "px";
+        changeColor("forward");
+        if (balloon.offsetWidth > 420) {
+          balloon.style.width = "200px";
+          balloon.style.height = "200px";
+          balloon.style.backgroundColor = "red";
+        }
+      }
+
+      function deflate() {
+        const balloon_size = balloon.offsetWidth;
+        if (balloon.offsetWidth > 200) {
+          balloon.style.width = balloon_size - 5 + "px";
+          balloon.style.height = balloon_size - 5 + "px";
+          changeColor("reverse");
+        }
+      }
+    </script>
+  </body>
+</html>

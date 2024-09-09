@@ -1,0 +1,41 @@
+.palallax {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.dbdl {
+  background-image: url("https://store-images.s-microsoft.com/image/apps.13651.13756572830160292.a0be61ed-4aae-47f9-8a44-c8be54b53f15.1c02c3b1-16f3-47dc-b18a-317c080cf2f6?q=90&w=480&h=270");
+}
+
+.osu {
+  background-image: url("https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/607260/ss_60f008234c8c53b878652ffd58c1448e9c1c9591.1920x1080.jpg?t=1672831169");
+}
+
+.genshin {
+    background-image: url("https://mpics.mgronline.com/pics/Images/567000007685401.JPEG");
+}
+
+.textbox {
+  display: flex;
+  height: 40%;
+  /* width: 100%; */
+  align-items: end;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}

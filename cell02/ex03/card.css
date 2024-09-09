@@ -1,0 +1,52 @@
+.topic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    width: 280px;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+}
+
+.card-img{
+    height: 220px;
+    width: 100%;
+}
+
+.card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    gap: 1rem;
+}
+
+.card-contact{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    min-height: 40px;
+}
+.card-social{
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+}
+
+body{
+    font-family: sans-serif
+}

@@ -1,0 +1,19 @@
+.table {
+  display: flex;
+  height: 100vh;
+  border: 1px solid black;
+}
+
+.cell1 {
+  flex: 1;
+  background-color: rgb(214, 250, 190);
+  display: flex;
+  align-items: center;
+  border-right: 1px solid grey;
+}
+.cell2 {
+  flex: 1;
+  background-color: rgb(255, 212, 172);
+  display: flex;
+  align-items: center;
+}
