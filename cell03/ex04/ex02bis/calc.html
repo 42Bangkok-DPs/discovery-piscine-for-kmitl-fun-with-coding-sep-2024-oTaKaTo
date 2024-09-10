@@ -22,15 +22,15 @@
       <button type="submit">Try me!</button>
     </form>
     <script>
-      $(document).ready(function(){
+      $(document).ready(function () {
         let timer = setInterval(useMe, 30000);
-        function useMe(){
+        function useMe() {
           alert("Please, use me...");
           // clearInterval(timer);
           // timer = setInterval(useMe, 30000);
         }
 
-        $(".calc").submit(function(event){
+        $(".calc").submit(function (event) {
           event.preventDefault();
           const operator = $("#operator").val();
           const left = Number($("#left").val());
@@ -39,24 +39,30 @@
             alert("Error :(");
             return;
           }
-          if ((operator == "div" && right == 0) || (operator == "mod" && right == 0)) {
+          if (
+            (operator == "div" && right == 0) ||
+            (operator == "mod" && right == 0)
+          ) {
             alert("It’s over 9000!");
             return;
           }
           if (operator == "add") {
             alert(left + right);
+            console.log(left + right);
           } else if (operator == "sub") {
             alert(left - right);
+            console.log(left - right);
           } else if (operator == "mul") {
             alert(left * right);
+            console.log(left * right);
           } else if (operator == "div") {
             alert(left / right);
+            console.log(left / right);
           } else if (operator == "mod") {
             alert(left % right);
+            console.log(left % right);
           }
-        })
-
-
+        });
       });
     </script>
   </body>
