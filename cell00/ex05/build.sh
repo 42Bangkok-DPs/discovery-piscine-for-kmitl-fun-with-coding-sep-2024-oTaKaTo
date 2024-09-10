@@ -1,6 +1,6 @@
 # $# is number of argument pass
 if [ $# -eq 0 ]; then 
-  echo "No arguments provided. Please provide folder names."
+  echo "No arguments supplied"
   exit 1
 fi
 
