@@ -31,8 +31,14 @@
       form.addEventListener("submit", (event) => {
         event.preventDefault();
         const operator = document.getElementById("operator").value;
-        const left = Number(document.getElementById("left").value);
-        const right = Number(document.getElementById("right").value);
+        let left = document.getElementById("left").value;
+        let right = document.getElementById("right").value;
+        if (left == "" || right == "") {
+          alert("Error :(");
+          return;
+        }
+        left = Number(left);
+        right = Number(right);
         if (isNaN(left) || isNaN(right) || left < 0 || right < 0) {
           alert("Error :(");
           return;
