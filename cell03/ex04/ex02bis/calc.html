@@ -80,7 +80,7 @@
           }
           left = Number(left);
           right = Number(right);
-          if (isNaN(left) || isNaN(right) || left < 0 || right < 0) {
+          if (isNaN(left) || isNaN(right) || left < 0 || right < 0 || left % 1 != 0 || right % 1 != 0) {
             alert("Error :(");
             return;
           }
