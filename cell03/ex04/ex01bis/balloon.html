@@ -19,7 +19,7 @@
               backgroundColor: colors[indexColor],
             });
             if ($("#balloon").width() > 420) {
-              indexColor = 0
+              indexColor = 0;
               $("#balloon").css({
                 width: "200px",
                 height: "200px",
@@ -42,6 +42,14 @@
     </script>
   </head>
   <body>
+    <style>
+      .balloon {
+        width: 200px;
+        height: 200px;
+        background-color: #ff0000;
+        border-radius: 50%;
+      }
+    </style>
     <div class="balloon" id="balloon"></div>
   </body>
 </html>
