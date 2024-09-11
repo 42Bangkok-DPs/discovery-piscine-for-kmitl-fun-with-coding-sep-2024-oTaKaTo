@@ -4,7 +4,6 @@ $(document).ready(function () {
   function saveTodo() {
     const todos = [];
     const links = $("#ft_list").find("a").toArray();
-    console.log(links);
     links.forEach((link) => {
       const todo = {
         id: link.id,
@@ -12,15 +11,15 @@ $(document).ready(function () {
       };
       todos.push(todo);
     });
-    document.cookie = `todos=${JSON.stringify(todos)}; path=/;`;
+    // ถ้ามีtest; ก็ encode
+    const encode_todos = encodeURIComponent(JSON.stringify(todos));
+    document.cookie = encode_todos; 
   }
 
   function loadTodo() {
-    const cookieString = document.cookie
-      .split("; ")
-      .find((row) => row.startsWith("todos="));
+    const cookieString = document.cookie;
     if (cookieString) {
-      const todos = JSON.parse(cookieString.split("=")[1]);
+      const todos = JSON.parse(decodeURIComponent(cookieString));
       todos.forEach((todo) => {
         $("<a></a>")
           .attr("id", todo.id)
