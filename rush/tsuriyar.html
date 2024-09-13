@@ -1,12 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>tsuriyar</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+        .nav {
+            transition: transform 0.5s ease, background-color 0.5s ease;
+        }
 
-  </head>
-  <body>
-  </body>
+        .nav:hover {
+            transform: scale(1.2);
+            background-color: #4f46e5;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="bg-gray-100 flex">
+            <!-- navbar -->
+            <nav
+                class="fixed left-0 top-0 h-screen w-60 bg-indigo-950 text-white flex flex-col p-4 ">
+                <a href="#intro"
+                    class="text-lg font-semibold  px-4 py-2 rounded nav">Who am
+                    I</a>
+                <a href="#skills"
+                    class="text-lg font-semibold px-4 py-2 rounded nav">Skills</a>
+                <a href="#contact"
+                    class="text-lg font-semibold px-4 py-2 rounded nav">contact</a>
+            </nav>
+
+            <!-- Main -->
+            <div class="flex-1 ml-60 p-5 relative" id="intro">
+                <!-- first part -->
+                <div
+                    class="p-10 shadow-xl bg-gray-50 text-center rounded-3xl flex">
+                    <img
+                        src="https://img5.pic.in.th/file/secure-sv1/99013-removebg-preview.png"
+                        alt="profilePic"
+                        class="w-[40%]">
+                    <div
+                        class="flex flex-col items-center justify-center grow p-10">
+                        <h1
+                            class="text-5xl font-semibold mb-4 text-gray-900 text-center">
+                            Thanpisit Suriyaroj
+                        </h1>
+                        <hr class="border-blue-300 w-full border-t-2">
+                        <h3
+                            class="text-3xl font-semibold text-gray-700 text-center">
+                            Computer Engineering
+                        </h3>
+                        <h3
+                            class="text-3xl font-semibold text-gray-600 text-center">
+                            King Mongkut's Institute of Technology Ladkrabang
+                        </h3>
+                    </div>
+                </div>
+
+                <hr class="my-8 border-gray-300" id="skills">
+
+                <!-- second part -->
+                <div class="p-10 shadow-xl bg-gray-50 text-center rounded-3xl">
+                    <h1
+                        class="text-4xl font-bold text-blue-600 mb-4 border-b-2 border-blue-300 pb-2">
+                        Skills
+                    </h1>
+                    <ul class="list-inside space-y-2 text-gray-800">
+                        <li
+                            class="text-3xl font-medium bg-blue-100 p-5 rounded-lg ">Python&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+                            &nbsp;&nbsp;&nbsp;expert</li>
+                        <li
+                            class="text-3xl font-medium bg-blue-100 p-5 rounded-lg ">C,
+                            C++&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;
+                            common</li>
+                        <li
+                            class="text-3xl font-medium bg-blue-100 p-5 rounded-lg ">HTML,CSS
+                            &nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;&nbsp;common</li>
+                        <li
+                            class="text-3xl font-medium bg-blue-100 p-5 rounded-lg ">Javascript
+                            &nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;&nbsp;common</li>
+                        <li
+                            class="text-3xl font-medium bg-blue-100 p-5 rounded-lg ">REACT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;
+                            starter</li>
+                    </ul>
+                </div>
+
+                <hr class="my-8 border-gray-300" id="contact">
+
+                <!-- third part -->
+                <div class="p-10 shadow-xl bg-gray-50 text-center rounded-3xl">
+                    <h1
+                        class="text-4xl font-bold text-blue-600 mb-4 border-b-2 border-blue-300 pb-2">
+                        contact
+                    </h1>
+                    <ul
+                        class="list-inside text-gray-800 flex h-full justify-around">
+                        <li class=" font-medium bg-blue-100 rounded-lg ">
+                            <a href="#"
+                                class="block flex items-center justify-center flex-col">
+                                <img
+                                    src="https://th.bing.com/th/id/R.c5ad0581106cbcc8bb6e654d08362c0a?rik=HxhkLGdlB41KCQ&riu=http%3a%2f%2fwww.pngall.com%2fwp-content%2fuploads%2f5%2fInstagram-Logo-PNG-Image.png&ehk=9tpsBD6oOcSKvZ4ZBZeY5FU8PhVUfMT4HJLDpJzk2yY%3d&risl=&pid=ImgRaw&r=0"
+                                    alt="insta" class="w-[300px] h-[300px]">
+                                <span class="text-3xl">Instagram</span>
+                            </a>
+                        </li>
+                        <li class=" font-medium bg-blue-100 rounded-lg ">
+                            <a href="#"
+                                class="block flex items-center justify-center flex-col">
+                                <img
+                                    src="https://th.bing.com/th/id/R.11991d9b6e676d00ecfcf8c537c8667b?rik=CIiipjJChLiomw&pid=ImgRaw&r=0"
+                                    alt="discord" class="w-[300px] h-[300px]">
+                                <span class="text-3xl">Discord</span>
+                            </a>
+                        </li>
+                        <li class="font-medium bg-blue-100 rounded-lg ">
+                            <a href="#"
+                                class="block flex items-center justify-center flex-col w-[300px]">
+                                <div
+                                    class="relative h-[300px] w-[300px] bg-white rounded-full z-10"></div>
+                                <img
+                                    src="https://seeklogo.com/images/G/github-logo-7880D80B8D-seeklogo.com.png"
+                                    alt="github"
+                                    class="absolute mt-[-45px] h-[300px] z-20">
+                                <span class="text-3xl ">Github</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="mt-8 mb-5 border-gray-300" id="contact">
+            </div>
+        </div>
+        <footer
+            class="bg-white h-20 text-center position-sticky bottom-0 flex justify-end items-center h-[10vh] w-full pr-6">
+            © 2024 Thanpisit Suriyaroj
+        </footer>
+    </body>
 </html>
